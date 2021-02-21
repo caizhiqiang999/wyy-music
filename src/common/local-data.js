@@ -1,7 +1,7 @@
 export const headerLinks = [
   {
     title:'发现音乐',
-    link:'/',
+    link:'/discover',
     id:1
   },
   {
@@ -29,4 +29,37 @@ export const headerLinks = [
     link:'/download',
     id:6
   }
+]
+
+export const discoverMenu = [
+  {
+    title: "推荐",
+    link: "/discover/recommend",
+    id:1
+  },
+  {
+    title: "排行榜",
+    link: "/discover/ranking",
+    id:2
+  },
+  {
+    title: "歌单",
+    link: "/discover/songs",
+    id:3
+  },
+  {
+    title: "主播电台",
+    link: "/discover/djradio",
+    id:4
+  },
+  {
+    title: "歌手",
+    link: "/discover/artist",
+    id:5
+  },
+  {
+    title: "新碟上架",
+    link: "/discover/album",
+    id:6
+  },
 ]

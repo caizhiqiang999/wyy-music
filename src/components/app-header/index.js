@@ -14,7 +14,7 @@ export default memo(function ZQAppHeader() {
 
   const showSelectItem = (item, index) => {
     if(index < 3 || index === 5) {
-      return <NavLink to={item.link} exact>{item.title}<i className='sprite_01 icon'></i></NavLink>
+      return <NavLink to={item.link}>{item.title}<i className='sprite_01 icon'></i></NavLink>
     } else {
       return <a href={item.link}>{item.title}</a>
     }
@@ -46,7 +46,6 @@ export default memo(function ZQAppHeader() {
         </HeaderRight>
       </div>
       <div className='divider'></div>
-      
     </HeaderWrapper>
   )
 })

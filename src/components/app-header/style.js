@@ -51,6 +51,7 @@ export const HeaderLeft = styled.div`
         height: 7px;
         bottom: -1px;
         left: 50%;
+        transform: translate(-50%, 0);
         background-position: -226px 0;
       }
 
