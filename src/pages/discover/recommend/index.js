@@ -1,31 +1,50 @@
-import React, { memo, useEffect } from 'react'
-import { connect } from 'react-redux'
+import React, { memo } from 'react'
 
-import { getTopBannersAction } from './store/actionCreators'
+import ZQTopBanner from './top-banner'
+import ZQHotRecommend from './hot-recommend'
+import { RecommendWrapper } from './style'
 
-function ZQRecommend(props) {
 
-  const { getBanners, topBanners } = props
-
-  useEffect(() => {
-    getBanners()
-  }, [getBanners])
+function ZQRecommend() {
 
   return (
     <div>
-      <h1>ZQRecommend</h1>
+      <ZQTopBanner/>
+      <RecommendWrapper className='wrap-v2'>
+        <div className='left'>
+          <ZQHotRecommend />
+        </div>
+        <div className='right'></div>
+      </RecommendWrapper>
     </div>
   )
 }
 
-const mapStateToProps = state => ({
-  topBanners: state.recommend.topBanners
-})
+export default memo(ZQRecommend)
 
-const mapDispatchToProps = dispatch => ({
-  getBanners: () => {
-    dispatch(getTopBannersAction())
-  }
-})
+// function ZQRecommend(props) {
 
-export default connect(mapStateToProps, mapDispatchToProps)(memo(ZQRecommend))
+//   const { getBanners, topBanners } = props
+
+//   useEffect(() => {
+//     getBanners()
+//   }, [getBanners])
+
+//   return (
+//     <div>
+//       <h1>ZQRecommend</h1>
+//     </div>
+//   )
+// }
+
+// const mapStateToProps = state => ({
+//   topBanners: state.recommend.topBanners
+// })
+
+// const mapDispatchToProps = dispatch => ({
+//   getBanners: () => {
+//     dispatch(getTopBannersAction())
+//   }
+// })
+
+// export default connect(mapStateToProps, mapDispatchToProps)(memo(ZQRecommend))
