@@ -11,3 +11,18 @@ export function getHotRecommends() {
     url: '/personalized?limit=8'
   })
 }
+
+export function getNewAlbums() {
+  return request({
+    url: '/top/album?limit=10'
+  })
+}
+
+export function getRankings(idx) {
+  return request({
+    url: '/top/list',
+    params: {
+      idx
+    }
+  })
+}

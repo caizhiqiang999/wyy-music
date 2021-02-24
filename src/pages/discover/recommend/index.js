@@ -2,6 +2,8 @@ import React, { memo } from 'react'
 
 import ZQTopBanner from './top-banner'
 import ZQHotRecommend from './hot-recommend'
+import ZQNewAlbum from './new-album'
+import ZQRanking from './ranking'
 import { RecommendWrapper } from './style'
 
 
@@ -13,6 +15,8 @@ function ZQRecommend() {
       <RecommendWrapper className='wrap-v2'>
         <div className='left'>
           <ZQHotRecommend />
+          <ZQNewAlbum />
+          <ZQRanking />
         </div>
         <div className='right'></div>
       </RecommendWrapper>

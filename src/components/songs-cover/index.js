@@ -1,4 +1,5 @@
 import React, { memo } from 'react'
+import { dealWithData } from '../../utils'
 
 import { SongsCoverWrapper } from './style'
 export default memo(function ZQSongsCover(props) {
@@ -12,7 +13,7 @@ export default memo(function ZQSongsCover(props) {
         <div className='sprite_cover cover'></div>
         <div className='sprite_cover info'>
           <div className='sprite_icon'></div>
-          <div>{info.playCount}</div>
+          <div>{dealWithData(info.playCount)}</div>
           <div className='sprite_icon'></div>
         </div>
       </div>

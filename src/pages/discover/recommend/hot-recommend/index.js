@@ -32,7 +32,6 @@ export default memo(function ZQHotRecommend() {
           })
         }
       </div>
-      <ZQHeaderRCM title='新碟上架' itemLinks={[]}/>
     </HotRecommendWrapper>
   )
 })
