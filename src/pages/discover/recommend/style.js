@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const RecommendWrapper = styled.div`
   display: flex;
-  height: 900px;
+  height: 1400px;
   background-color: #fff;
 
   .left {
