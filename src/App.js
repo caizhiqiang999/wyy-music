@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
 import { Provider } from 'react-redux'
 
+import ZQPlayerBar from './pages/player/player-bar'
 import routes from './router'
 import store from './store'
 
@@ -15,6 +16,7 @@ export default memo(function App() {
         <ZQAppHeader/>
         {renderRoutes(routes)}
         <ZQAppFooter/>
+        <ZQPlayerBar/>
       </BrowserRouter>
     </Provider>
   )
